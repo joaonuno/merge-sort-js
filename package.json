@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Sort an array using the merge-sort algorithm.",
   "keywords": ["merge", "sort", "array", "stable", "node", "browser"],
-  "homepage": "https://github.com/joaonuno/merge-sort",
+  "homepage": "https://github.com/joaonuno/merge-sort-js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/joaonuno/merge-sort.git"
+    "url": "git://github.com/joaonuno/merge-sort-js.git"
 
   },
   "license": "MIT",
