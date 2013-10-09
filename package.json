@@ -1,5 +1,5 @@
 {
-  "name": "merge-sort",
+  "name": "mergesort",
   "version": "0.0.1",
   "description": "Sort an array using the merge-sort algorithm.",
   "keywords": ["merge", "sort", "array", "stable", "node", "browser"],

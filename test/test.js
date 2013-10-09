@@ -59,4 +59,23 @@ describe('mergeSort', function () {
       {id: 121, stable: 15}
     ]);
   });
+
+  it('should return a new array even if no sorting is needed.', function () {
+    var arr0, arr1, arr2, comparatorFn;
+
+    comparatorFn = function (a, b) {
+      return a - b;
+    };
+
+    arr0 = [];
+    arr1 = [1];
+    arr2 = [1, 2];
+    assert.notEqual(mergeSort(comparatorFn, arr2), arr2);
+    assert.notEqual(mergeSort(comparatorFn, arr1), arr1);
+    assert.notEqual(mergeSort(comparatorFn, arr0), arr0);
+
+    assert.deepEqual(mergeSort(comparatorFn, arr2), arr2);
+    assert.deepEqual(mergeSort(comparatorFn, arr1), arr1);
+    assert.deepEqual(mergeSort(comparatorFn, arr0), arr0);
+  });
 });

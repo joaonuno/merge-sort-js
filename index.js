@@ -15,7 +15,7 @@ module.exports = (function () {
       secondHalf = arr.slice(len / 2, len);
       return merge(comparatorFn, mergeSort(comparatorFn, firstHalf), mergeSort(comparatorFn, secondHalf));
     } else {
-      return arr;
+      return arr.slice();
     }
   }
 
